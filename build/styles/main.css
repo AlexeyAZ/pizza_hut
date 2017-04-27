@@ -1,0 +1,393 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("../fonts/BebasNeue/BebasNeue-Thin.eot");
+  src: url("../fonts/BebasNeue/BebasNeue-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue/BebasNeue-Thin.woff2") format("woff2"), url("../fonts/BebasNeue/BebasNeue-Thin.woff") format("woff"), url("../fonts/BebasNeue/BebasNeue-Thin.ttf") format("truetype"), url("../fonts/BebasNeue/BebasNeue-Thin.svg#BebasNeue-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("../fonts/BebasNeue/BebasNeueRegular.eot");
+  src: url("../fonts/BebasNeue/BebasNeueRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue/BebasNeueRegular.woff2") format("woff2"), url("../fonts/BebasNeue/BebasNeueRegular.woff") format("woff"), url("../fonts/BebasNeue/BebasNeueRegular.ttf") format("truetype"), url("../fonts/BebasNeue/BebasNeueRegular.svg#BebasNeueRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Bebas Neue Book';
+  src: url("../fonts/BebasNeue/BebasNeueBook.eot");
+  src: url("../fonts/BebasNeue/BebasNeueBook.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue/BebasNeueBook.woff2") format("woff2"), url("../fonts/BebasNeue/BebasNeueBook.woff") format("woff"), url("../fonts/BebasNeue/BebasNeueBook.ttf") format("truetype"), url("../fonts/BebasNeue/BebasNeueBook.svg#BebasNeueBook") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("../fonts/BebasNeue/BebasNeue-Light.eot");
+  src: url("../fonts/BebasNeue/BebasNeue-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue/BebasNeue-Light.woff2") format("woff2"), url("../fonts/BebasNeue/BebasNeue-Light.woff") format("woff"), url("../fonts/BebasNeue/BebasNeue-Light.ttf") format("truetype"), url("../fonts/BebasNeue/BebasNeue-Light.svg#BebasNeue-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("../fonts/BebasNeue/BebasNeueRegular_1.eot");
+  src: url("../fonts/BebasNeue/BebasNeueRegular_1.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue/BebasNeueRegular_1.woff2") format("woff2"), url("../fonts/BebasNeue/BebasNeueRegular_1.woff") format("woff"), url("../fonts/BebasNeue/BebasNeueRegular_1.ttf") format("truetype"), url("../fonts/BebasNeue/BebasNeueRegular_1.svg#BebasNeueRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("../fonts/BebasNeue/BebasNeue.eot");
+  src: url("../fonts/BebasNeue/BebasNeue.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue/BebasNeue.woff2") format("woff2"), url("../fonts/BebasNeue/BebasNeue.woff") format("woff"), url("../fonts/BebasNeue/BebasNeue.ttf") format("truetype"), url("../fonts/BebasNeue/BebasNeue.svg#BebasNeue") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("../fonts/BebasNeue/BebasNeueBold.eot");
+  src: url("../fonts/BebasNeue/BebasNeueBold.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue/BebasNeueBold.woff2") format("woff2"), url("../fonts/BebasNeue/BebasNeueBold.woff") format("woff"), url("../fonts/BebasNeue/BebasNeueBold.ttf") format("truetype"), url("../fonts/BebasNeue/BebasNeueBold.svg#BebasNeueBold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Bebas Neue Book';
+  src: url("../fonts/BebasNeue/BebasNeueBook_1.eot");
+  src: url("../fonts/BebasNeue/BebasNeueBook_1.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue/BebasNeueBook_1.woff2") format("woff2"), url("../fonts/BebasNeue/BebasNeueBook_1.woff") format("woff"), url("../fonts/BebasNeue/BebasNeueBook_1.ttf") format("truetype"), url("../fonts/BebasNeue/BebasNeueBook_1.svg#BebasNeueBook") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PF Din Text Comp Pro';
+  src: url("../fonts/PFDinTextCompPro/PFDinTextCompPro-Light.eot");
+  src: url("../fonts/PFDinTextCompPro/PFDinTextCompPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinTextCompPro/PFDinTextCompPro-Light.woff2") format("woff2"), url("../fonts/PFDinTextCompPro/PFDinTextCompPro-Light.woff") format("woff"), url("../fonts/PFDinTextCompPro/PFDinTextCompPro-Light.ttf") format("truetype"), url("../fonts/PFDinTextCompPro/PFDinTextCompPro-Light.svg#PFDinTextCompPro-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+* {
+  box-sizing: border-box; }
+  *:before, *:after {
+    box-sizing: border-box; }
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%; }
+
+body {
+  font-family: 'Bebas Neue';
+  position: relative;
+  line-height: 1;
+  min-width: 320px;
+  height: 100%; }
+
+.container {
+  margin: 0 auto;
+  padding: 0 30px;
+  position: relative;
+  max-width: 1160px; }
+  @media only screen and (max-width: 768px) {
+    .container {
+      padding: 0 15px; } }
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 72px;
+  width: 100%;
+  z-index: 10; }
+  .footer__container {
+    text-align: center; }
+  .footer__list {
+    color: white;
+    display: inline-block;
+    font-family: "PF Din Text Comp Pro", sans-serif;
+    font-size: 14px; }
+  .footer__list-item {
+    display: inline-block;
+    margin-right: 30px; }
+    .footer__list-item:last-child {
+      margin-right: 0; }
+  .footer__list-link {
+    display: inline-block;
+    color: white;
+    text-decoration: none; }
+    .footer__list-link:hover .footer__list-text {
+      border-color: white; }
+  .footer__list-img-wrap {
+    display: inline-block;
+    height: 32px; }
+  .footer__list-img_menu {
+    -ms-transform: rotate(30deg) translate(-6px, -5px);
+        transform: rotate(30deg) translate(-6px, -5px);
+    width: 26px; }
+  .footer__list-img_places {
+    width: 26px; }
+  .footer__list-img_actions {
+    width: 22px; }
+  .footer__list-text {
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent; }
+
+.wrapper {
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  padding-bottom: 74px;
+  position: relative;
+  min-height: 100vh; }
+  @media only screen and (max-width: 1024px) {
+    .wrapper {
+      background-position: center; } }
+  .wrapper__img {
+    -ms-transform: translate(16%, -50%);
+        transform: translate(16%, -50%);
+    position: absolute;
+    top: 50%;
+    right: 50%; }
+    @media only screen and (max-width: 1024px) {
+      .wrapper__img {
+        right: 60%; } }
+    @media only screen and (max-width: 768px) {
+      .wrapper__img {
+        -ms-transform: translate(12%, -50%);
+            transform: translate(12%, -50%);
+        right: 80%; } }
+    @media only screen and (max-width: 600px) {
+      .wrapper__img {
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+        right: 70%; } }
+    @media only screen and (max-width: 500px) {
+      .wrapper__img {
+        display: none; } }
+
+.content {
+  color: white;
+  padding-bottom: 15px;
+  -ms-flex: 1 0 auto;
+      flex: 1 0 auto; }
+  .content__container {
+    height: 100%; }
+  .content__column {
+    margin-left: 50%;
+    padding-top: 23px;
+    padding-left: 90px;
+    position: relative;
+    width: 50%; }
+    @media only screen and (max-width: 1024px) {
+      .content__column {
+        margin-left: 40%;
+        width: 60%; } }
+    @media only screen and (max-width: 768px) {
+      .content__column {
+        margin-left: 20%;
+        width: 80%; } }
+    @media only screen and (max-width: 600px) {
+      .content__column {
+        text-align: center;
+        margin-left: 0;
+        padding-left: 0;
+        width: auto; } }
+  .content__column-head {
+    margin-bottom: 84px; }
+    @media only screen and (max-width: 768px) {
+      .content__column-head {
+        margin-bottom: 40px; } }
+  .content__column-img {
+    -ms-transform: translateX(90px);
+        transform: translateX(90px);
+    max-width: 115px; }
+    @media only screen and (max-width: 600px) {
+      .content__column-img {
+        -ms-transform: translateX(0);
+            transform: translateX(0); } }
+  .content__offer {
+    display: inline-block; }
+  .content__offer-price {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+  .content__offer-price-value {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    line-height: 0.8;
+    position: relative; }
+    .content__offer-price-value img {
+      width: 12px; }
+    .content__offer-price-value_old {
+      font-weight: 300;
+      font-size: 75px; }
+      .content__offer-price-value_old:before {
+        content: "";
+        -ms-transform: translate(-50%, -50%) rotate(30deg);
+            transform: translate(-50%, -50%) rotate(30deg);
+        background-color: #e82019;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 3px;
+        width: 120%; }
+      .content__offer-price-value_old img {
+        width: 12px; }
+    .content__offer-price-value_new {
+      font-weight: bold;
+      font-size: 164px; }
+      @media only screen and (max-width: 600px) {
+        .content__offer-price-value_new {
+          font-size: 140px; } }
+      .content__offer-price-value_new img {
+        width: 28px; }
+  .content__offer-circle {
+    border: 1px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 2px 0 6px;
+    position: relative;
+    height: 13px;
+    width: 13px; }
+    .content__offer-circle:before {
+      content: "";
+      -ms-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+      background-color: rgba(255, 255, 255, 0.5);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 1px;
+      width: 130%; }
+  .content__offer-text {
+    color: #e82019;
+    font-size: 54px;
+    font-weight: bold;
+    text-transform: uppercase; }
+    @media only screen and (max-width: 600px) {
+      .content__offer-text {
+        font-size: 48px; } }
+  .content__offer-items {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    margin-bottom: 84px; }
+    @media only screen and (max-width: 768px) {
+      .content__offer-items {
+        margin-bottom: 40px; } }
+  .content__offer-item {
+    font-family: 'Bebas Neue Book', sans-serif;
+    font-size: 17px;
+    text-transform: uppercase; }
+    @media only screen and (max-width: 600px) {
+      .content__offer-item {
+        font-size: 16px; } }
+  .content__offer-btn {
+    background-color: #e82019;
+    border-radius: 60px;
+    display: block;
+    color: white;
+    font-size: 48px;
+    text-decoration: none;
+    margin-bottom: 90px;
+    padding: 10px 23px 4px; }
+    @media only screen and (max-width: 768px) {
+      .content__offer-btn {
+        margin-bottom: 40px; } }
+    @media only screen and (max-width: 600px) {
+      .content__offer-btn {
+        font-size: 42px; } }
+    .content__offer-btn:hover {
+      animation: btnAnim 0.8s 0s ease-out 1; }
+  .content__offer-note {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .content__offer-note-img {
+    margin-right: 2px;
+    max-width: 62px; }
+  .content__offer-note-text {
+    font-size: 20px;
+    font-weight: bold; }
+  .content__offer-note-decor {
+    margin-top: -50px;
+    margin-left: -20px; }
+  .content__column-img-decor {
+    position: absolute; }
+    .content__column-img-decor_top {
+      -ms-transform: translate(-50%, -10px);
+          transform: translate(-50%, -10px);
+      top: 0;
+      left: 0; }
+      @media only screen and (max-width: 600px) {
+        .content__column-img-decor_top {
+          -ms-transform: translate(-70%, -10px);
+              transform: translate(-70%, -10px); } }
+    .content__column-img-decor_bottom {
+      -ms-transform: translate(-50%, 30%);
+          transform: translate(-50%, 30%);
+      bottom: 0;
+      left: 100%; }
+      @media only screen and (max-width: 1024px) {
+        .content__column-img-decor_bottom {
+          -ms-transform: translate(-30%, 30%);
+              transform: translate(-30%, 30%); } }
+      @media only screen and (max-width: 768px) {
+        .content__column-img-decor_bottom {
+          -ms-transform: translate(-20%, -40%);
+              transform: translate(-20%, -40%);
+          bottom: auto;
+          top: 100%;
+          left: auto;
+          right: 0; } }
+      @media only screen and (max-width: 600px) {
+        .content__column-img-decor_bottom {
+          -ms-transform: translate(50%, -40%);
+              transform: translate(50%, -40%); } }
+
+@keyframes btnAnim {
+  from {
+    box-shadow: 0 0 8px 6px #e82019, 0 0 12px 14px #e82019; }
+  to {
+    box-shadow: 0 0 18px 6px rgba(255, 48, 26, 0), 0 0 4px 71px rgba(255, 48, 26, 0); } }
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor; }
+
+.icon-footer-icon-actions {
+  font-size: 1.38rem;
+  width: 1em; }
+
+.icon-footer-icon-menu {
+  font-size: 2.69rem;
+  width: 0.86989em; }
+
+.icon-footer-icon-places {
+  font-size: 16.93rem;
+  width: 1.00118em; }
+
+.icon-icon-minutes {
+  font-size: 8.13rem;
+  width: 1.68143em; }
+
+.icon-icon-rub {
+  font-size: 0.86rem;
+  width: 0.32558em; }
+
+.icon-logo {
+  font-size: 44.4rem;
+  width: 0.99662em; }
+
+/*# sourceMappingURL=main.css.map */

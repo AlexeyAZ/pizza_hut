@@ -1,0 +1,10 @@
+.container {
+	margin: 0 auto;
+	padding: 0 30px;
+	position: relative;
+	max-width: 1160px;
+
+	@include media(w768) {
+		padding: 0 15px;
+	}
+}

@@ -1,0 +1,43 @@
+extends templates/layout
+
+block vars
+    - var title = 'Main'
+
+block content
+    div.wrapper
+        img(src="img/pizza.png", alt="").wrapper__img
+        div.content
+            div.container.content__container
+                div.content__column
+                    img(src="img/pepper.png", alt="").content__column-img-decor.content__column-img-decor_top
+                    div.content__column-head
+                        a(href="https://spb.pizzahut.ru/")
+                            img(src="img/logo.svg", alt="Pizza Hut").content__column-img
+                    div.content__offer
+                        div.content__offer-price
+                            div.content__offer-price-value.content__offer-price-value_old
+                                |998
+                                img(src="img/icon-rub.svg", alt="")
+                            div.content__offer-price-value.content__offer-price-value_new
+                                |777
+                                img(src="img/icon-rub.svg", alt="").
+                        div.content__offer-text.
+                            Набор Pizza Party
+                        div.content__offer-items
+                            div.content__offer-item
+                                |джульетта
+                                span.content__offer-circle 
+                                |20см
+                            div.content__offer-item
+                                |Любители Пепперони
+                                span.content__offer-circle
+                                |30см
+                        a(href="https://spb.pizzahut.ru/menu/set/").content__offer-btn.
+                            заказать сейчас
+                        div.content__offer-note
+                            img(src="img/icon-minutes.svg", alt="").content__offer-note-img
+                            p.content__offer-note-text.
+                                минут<br> доставка
+                            img(src="img/offer-note-decor.png", alt="").content__offer-note-decor
+                    img(src="img/sauce.png", alt="").content__column-img-decor.content__column-img-decor_bottom
+        include components/footer

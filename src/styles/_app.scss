@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+
+    &:before,
+    &:after {
+        box-sizing: border-box;
+    }
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100%;
+}
+
+body {
+    font-family: 'Bebas Neue';
+    position: relative;
+    line-height: 1;
+    min-width: 320px;
+    height: 100%;
+}

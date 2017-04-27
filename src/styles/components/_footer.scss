@@ -1,0 +1,70 @@
+.footer {
+	background-color: rgba(0,0,0,0.7);
+	display: flex;
+	align-items: center;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 72px;
+	width: 100%;
+	z-index: 10;
+
+	&__container {
+		text-align: center;
+	}
+	
+	&__list {
+		color: white;
+		display: inline-block;
+		font-family: "PF Din Text Comp Pro", sans-serif;
+		font-size: 14px;
+	}
+
+	&__list-item {
+		display: inline-block;
+		margin-right: 30px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__list-link {
+		display: inline-block;
+		color: white;
+		text-decoration: none;
+
+		&:hover {
+
+			.footer__list-text {
+				border-color: white;
+			}
+		}
+	}
+
+	&__list-img-wrap {
+		display: inline-block;
+		height: 32px;
+	}
+
+	&__list-img {
+
+		&_menu {
+			transform: rotate(30deg) translate(-6px, -5px);
+			width: 26px;
+		}
+		
+		&_places {
+			width: 26px;
+		}
+
+		&_actions {
+			width: 22px;
+		}
+	}
+
+	&__list-text {
+		transition: $trans;
+		border-bottom: 1px solid transparent;
+	}
+}

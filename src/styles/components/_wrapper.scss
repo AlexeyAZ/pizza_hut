@@ -1,0 +1,39 @@
+.wrapper {
+	background-image: url("../img/bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+	padding-bottom: 74px;
+	position: relative;
+	min-height: 100vh;
+
+	@include media(w1024) {
+		background-position: center;
+	}
+
+	&__img {
+		transform: translate(16%, -50%);
+		position: absolute;
+		top: 50%;
+		right: 50%;
+
+		@include media(w1024) {
+			right: 60%;
+		}
+
+		@include media(w768) {
+			transform: translate(12%, -50%);
+			right: 80%;
+		}
+
+		@include media(w600) {
+			transform: translate(0, -50%);
+			right: 70%;
+		}
+
+		@include media(w500) {
+			display: none;
+		}
+	}
+}
