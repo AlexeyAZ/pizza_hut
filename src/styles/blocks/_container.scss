@@ -7,4 +7,8 @@
 	@include media(w768) {
 		padding: 0 15px;
 	}
+
+	@include media(w600) {
+		padding: 0 10px;
+	}
 }

@@ -4,12 +4,16 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	overflow: hidden;
-	padding-bottom: 74px;
+	padding-bottom: 72px;
 	position: relative;
 	min-height: 100vh;
 
 	@include media(w1024) {
 		background-position: center;
+	}
+
+	@include media(w600) {
+		padding-bottom: 60px;
 	}
 
 	&__img {

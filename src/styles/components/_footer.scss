@@ -9,6 +9,10 @@
 	width: 100%;
 	z-index: 10;
 
+	@include media(w600) {
+		height: 60px;
+	}
+
 	&__container {
 		text-align: center;
 	}
@@ -45,6 +49,10 @@
 	&__list-img-wrap {
 		display: inline-block;
 		height: 32px;
+
+		@include media(w600) {
+			height: 28px;
+		}
 	}
 
 	&__list-img {
@@ -52,14 +60,26 @@
 		&_menu {
 			transform: rotate(30deg) translate(-6px, -5px);
 			width: 26px;
+
+			@include media(w600) {
+				width: 20px;
+			}
 		}
 		
 		&_places {
 			width: 26px;
+
+			@include media(w600) {
+				width: 20px;
+			}
 		}
 
 		&_actions {
 			width: 22px;
+
+			@include media(w600) {
+				width: 16px;
+			}
 		}
 	}
 

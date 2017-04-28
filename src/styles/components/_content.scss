@@ -33,10 +33,15 @@
 	}
 
 	&__column-head {
-		margin-bottom: 84px;
+		//margin-bottom: 84px;
+		margin-bottom: 20%;
 
 		@include media(w768) {
-			margin-bottom: 40px;
+			//margin-bottom: 40px;
+		}
+
+		@include media(w600) {
+			margin-bottom: 10%;
 		}
 	}
 
@@ -46,6 +51,7 @@
 
 		@include media(w600) {
 			transform: translateX(0);
+			max-width: 90px;
 		}
 	}
 
@@ -64,6 +70,10 @@
 		line-height: 0.8;
 		position: relative;
 
+		@include media(w600) {
+			justify-content: center;
+		}
+
 		img {
 			width: 12px;
 		}
@@ -71,6 +81,10 @@
 		&_old {
 			font-weight: 300;
 			font-size: 75px;
+
+			@include media(w600) {
+				font-size: 55px;
+			}
 
 			&:before {
 				content: "";
@@ -93,7 +107,7 @@
 			font-size: 164px;
 
 			@include media(w600) {
-				font-size: 140px;
+				font-size: 120px;
 			}
 
 			img {
@@ -110,6 +124,11 @@
 		position: relative;
 		height: 13px;
 		width: 13px;
+
+		@include media(w600) {
+			height: 11px;
+			width: 11px;
+		}
 
 		&:before {
 			content: "";
@@ -130,17 +149,22 @@
 		text-transform: uppercase;
 
 		@include media(w600) {
-			font-size: 48px;
+			font-size: 44px;
 		}
 	}
 
 	&__offer-items {
 		display: flex;
 		justify-content: space-between;
-		margin-bottom: 84px;
+		//margin-bottom: 84px;
+		margin-bottom: 20%;
 
 		@include media(w768) {
-			margin-bottom: 40px;
+			//margin-bottom: 40px;
+		}
+
+		@include media(w600) {
+			margin-bottom: 10%;
 		}
 	}
 
@@ -150,7 +174,7 @@
 		text-transform: uppercase;
 
 		@include media(w600) {
-			font-size: 16px;
+			font-size: 14px;
 		}
 	}
 
@@ -161,15 +185,17 @@
 		color: white;
 		font-size: 48px;
 		text-decoration: none;
-		margin-bottom: 90px;
+		//margin-bottom: 90px;
+		margin-bottom: 20%;
 		padding: 10px 23px 4px;
 
 		@include media(w768) {
-			margin-bottom: 40px;
+			//margin-bottom: 40px;
 		}
 
 		@include media(w600) {
-			font-size: 42px;
+			font-size: 36px;
+			margin-bottom: 10%;
 		}
 
 		&:hover {
@@ -181,6 +207,10 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+
+		@include media(w600) {
+			text-align: left;
+		}
 	}
 
 	&__offer-note-img {
