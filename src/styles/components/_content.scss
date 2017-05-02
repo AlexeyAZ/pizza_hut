@@ -5,6 +5,11 @@
 
 	&__container {
 		height: 100%;
+
+		@include media(w500) {
+			display: flex;
+			justify-content: flex-end;
+		}
 	}
 
 	&__column {
@@ -20,28 +25,36 @@
 		}
 
 		@include media(w768) {
-			margin-left: 20%;
-			width: 80%;
+			text-align: right;
+			margin-left: 0;
+			padding-left: 0;
+			padding-right: 10%;
+			width: auto;
 		}
 
 		@include media(w600) {
-			text-align: center;
-			margin-left: 0;
-			padding-left: 0;
-			width: auto;
+			
+		}
+
+		@include media(w500) {
+			text-align: left;
+			padding-right: 0;
+			width: 66%;
 		}
 	}
 
 	&__column-head {
 		//margin-bottom: 84px;
-		margin-bottom: 20%;
+		margin-bottom: 15%;
 
 		@include media(w768) {
+			margin-bottom: 10%;
 			//margin-bottom: 40px;
+			display: none;
 		}
 
 		@include media(w600) {
-			margin-bottom: 10%;
+			
 		}
 	}
 
@@ -49,14 +62,68 @@
 		transform: translateX(90px);
 		max-width: 115px;
 
-		@include media(w600) {
+		@include media(w768) {
 			transform: translateX(0);
+			margin-right: 20%;
 			max-width: 90px;
+		}
+
+		@include media(w500) {
+			margin-right: 30%;
+			max-width: 70px;
 		}
 	}
 
 	&__offer {
 		display: inline-block;
+	}
+
+	&__offer-logo {
+		display: none;
+		max-width: 80px;
+		position: relative;
+		z-index: 3;
+
+		@include media(w768) {
+			display: block;
+			margin: 0 auto 30px;
+		}
+	}
+
+	&__offer-note {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 15%;
+
+		@include media(w600) {
+			text-align: left;
+			margin-bottom: 10%;
+		}
+	}
+
+	&__offer-note-img {
+		margin-left: -20px;
+		max-width: 80px;
+
+		@include media(w600) {
+			margin-left: 0;
+			max-width: 70px;
+		}
+	}
+
+	&__offer-note-text {
+		font-size: 22px;
+		font-weight: bold;
+
+		@include media(w600) {
+			font-size: 20px;
+		}
+	}
+
+	&__offer-note-decor {
+		margin-top: -50px;
+		margin-left: -20px;
 	}
 
 	&__offer-price {
@@ -86,6 +153,10 @@
 				font-size: 55px;
 			}
 
+			@include media(w500) {
+				font-size: 35px;
+			}
+
 			&:before {
 				content: "";
 				transform: translate(-50%,-50%) rotate(30deg);
@@ -99,6 +170,10 @@
 
 			img {
 				width: 12px;
+
+				@include media(w500) {
+					width: 8px;
+				}
 			}
 		}
 
@@ -110,8 +185,16 @@
 				font-size: 120px;
 			}
 
+			@include media(w500) {
+				font-size: 100px;
+			}
+
 			img {
 				width: 28px;
+
+				@include media(w500) {
+					width: 20px;
+				}
 			}
 		}
 	}
@@ -151,6 +234,10 @@
 		@include media(w600) {
 			font-size: 44px;
 		}
+
+		@include media(w500) {
+			font-size: 32px;
+		}
 	}
 
 	&__offer-items {
@@ -166,6 +253,10 @@
 		@include media(w600) {
 			margin-bottom: 10%;
 		}
+
+		@include media(w500) {
+			flex-direction: column;
+		}
 	}
 
 	&__offer-item {
@@ -175,6 +266,11 @@
 
 		@include media(w600) {
 			font-size: 14px;
+		}
+
+		@include media(w500) {
+			font-size: 16px;
+			margin-bottom: 4px;
 		}
 	}
 
@@ -186,7 +282,6 @@
 		font-size: 48px;
 		text-decoration: none;
 		//margin-bottom: 90px;
-		margin-bottom: 20%;
 		padding: 10px 23px 4px;
 
 		@include media(w768) {
@@ -195,37 +290,15 @@
 
 		@include media(w600) {
 			font-size: 36px;
-			margin-bottom: 10%;
+		}
+
+		@include media(w500) {
+			font-size: 26px;
 		}
 
 		&:hover {
 			animation: btnAnim 0.8s 0s ease-out 1;
 		}
-	}
-
-	&__offer-note {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-
-		@include media(w600) {
-			text-align: left;
-		}
-	}
-
-	&__offer-note-img {
-		margin-right: 2px;
-		max-width: 62px;
-	}
-
-	&__offer-note-text {
-		font-size: 20px;
-		font-weight: bold;
-	}
-
-	&__offer-note-decor {
-		margin-top: -50px;
-		margin-left: -20px;
 	}
 
 	&__column-img-decor {
@@ -236,14 +309,25 @@
 			top: 0;
 			left: 0;
 
+			@include media(w768) {
+				transform: translate(10%, -20%);
+			}
+
 			@include media(w600) {
-				transform: translate(-70%, -10px);
+				transform: translate(0, -40%);
+				left: auto;
+				right: 60%;
+				width: 150px;
+			}
+
+			@include media(w500) {
+				right: 80%;
 			}
 		}
 		
 		&_bottom {
 			transform: translate(-50%, 30%);
-			bottom: 0;
+			top: 100%;
 			left: 100%;
 
 			@include media(w1024) {
@@ -251,7 +335,7 @@
 			}
 
 			@include media(w768) {
-				transform: translate(-20%, -40%);
+				transform: translate(-20%, 20%);
 				bottom: auto;
 				top: 100%;
 				left: auto;
@@ -259,7 +343,7 @@
 			}
 
 			@include media(w600) {
-				transform: translate(50%, -40%);
+				transform: translate(50%, 20%);
 			}
 		}
 	}

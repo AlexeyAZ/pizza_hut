@@ -27,17 +27,23 @@
 		}
 
 		@include media(w768) {
-			transform: translate(12%, -50%);
-			right: 80%;
+			transform: translate(18%, 50px);// rotate(20deg);
+			top: 0;
+			right: 60%;
 		}
 
 		@include media(w600) {
-			transform: translate(0, -50%);
-			right: 70%;
+			transform: rotate(10deg);
+			height: 100%;
+			//transform: translate(0, -50%);
+			//right: 70%;
 		}
 
 		@include media(w500) {
-			display: none;
+			transform: rotate(-18deg) scaleY(-1);
+			right: 55%;
+			//display: none;
+			z-index: 2;
 		}
 	}
 }

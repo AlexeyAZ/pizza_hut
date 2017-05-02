@@ -14,6 +14,13 @@ block content
                         a(href="https://spb.pizzahut.ru/")
                             img(src="img/logo.svg", alt="Pizza Hut").content__column-img
                     div.content__offer
+                        a(href="https://spb.pizzahut.ru/")
+                            img(src="img/logo.svg", alt="Pizza Hut").content__offer-logo
+                        div.content__offer-note
+                            img(src="img/icon-minutes.svg", alt="").content__offer-note-img
+                            p.content__offer-note-text.
+                                минут<br> доставка
+                            img(src="img/offer-note-decor.png", alt="").content__offer-note-decor
                         div.content__offer-price
                             div.content__offer-price-value.content__offer-price-value_old
                                 |998
@@ -27,17 +34,12 @@ block content
                             div.content__offer-item
                                 |джульетта
                                 span.content__offer-circle 
-                                |20см
+                                |30см
                             div.content__offer-item
                                 |Любители Пепперони
                                 span.content__offer-circle
                                 |30см
                         a(href="https://spb.pizzahut.ru/menu/set/").content__offer-btn.
                             заказать сейчас
-                        div.content__offer-note
-                            img(src="img/icon-minutes.svg", alt="").content__offer-note-img
-                            p.content__offer-note-text.
-                                минут<br> доставка
-                            img(src="img/offer-note-decor.png", alt="").content__offer-note-decor
                     img(src="img/sauce.png", alt="").content__column-img-decor.content__column-img-decor_bottom
         include components/footer
