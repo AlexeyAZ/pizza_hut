@@ -79,14 +79,15 @@
 	}
 
 	&__offer-logo {
-		display: none;
-		max-width: 80px;
+		//display: none;
+		display: block;
+		margin: 0 auto 15%;
+		max-width: 115px;
 		position: relative;
 		z-index: 3;
 
 		@include media(w768) {
-			display: block;
-			margin: 0 auto 30px;
+			max-width: 80px;
 		}
 	}
 
@@ -95,6 +96,7 @@
 		align-items: center;
 		justify-content: center;
 		margin-bottom: 15%;
+		position: relative;
 
 		@include media(w600) {
 			text-align: left;
@@ -103,12 +105,16 @@
 	}
 
 	&__offer-note-img {
-		margin-left: -20px;
+		margin-left: -5%;
 		max-width: 80px;
 
 		@include media(w600) {
-			margin-left: 0;
+			//margin-left: 0;
 			max-width: 70px;
+		}
+
+		@include media(w500) {
+			max-width: 56px;
 		}
 	}
 
@@ -119,11 +125,18 @@
 		@include media(w600) {
 			font-size: 20px;
 		}
+
+		@include media(w500) {
+			font-size: 17px;
+		}
 	}
 
 	&__offer-note-decor {
-		margin-top: -50px;
-		margin-left: -20px;
+		position: absolute;
+		left: 62%;
+		top: -100%;
+		// margin-top: -50px;
+		// margin-left: -20px;
 	}
 
 	&__offer-price {

@@ -41,7 +41,8 @@
 
 		@include media(w500) {
 			transform: rotate(-18deg) scaleY(-1);
-			right: 55%;
+			top: -3%;
+			right: 45%;
 			//display: none;
 			z-index: 2;
 		}

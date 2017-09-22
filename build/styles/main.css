@@ -189,7 +189,8 @@ body {
       .wrapper__img {
         -ms-transform: rotate(-18deg) scaleY(-1);
             transform: rotate(-18deg) scaleY(-1);
-        right: 55%;
+        top: -3%;
+        right: 45%;
         z-index: 2; } }
 
 .content {
@@ -250,14 +251,14 @@ body {
   .content__offer {
     display: inline-block; }
   .content__offer-logo {
-    display: none;
-    max-width: 80px;
+    display: block;
+    margin: 0 auto 15%;
+    max-width: 115px;
     position: relative;
     z-index: 3; }
     @media only screen and (max-width: 768px) {
       .content__offer-logo {
-        display: block;
-        margin: 0 auto 30px; } }
+        max-width: 80px; } }
   .content__offer-note {
     display: -ms-flexbox;
     display: flex;
@@ -265,27 +266,34 @@ body {
         align-items: center;
     -ms-flex-pack: center;
         justify-content: center;
-    margin-bottom: 15%; }
+    margin-bottom: 15%;
+    position: relative; }
     @media only screen and (max-width: 600px) {
       .content__offer-note {
         text-align: left;
         margin-bottom: 10%; } }
   .content__offer-note-img {
-    margin-left: -20px;
+    margin-left: -5%;
     max-width: 80px; }
     @media only screen and (max-width: 600px) {
       .content__offer-note-img {
-        margin-left: 0;
         max-width: 70px; } }
+    @media only screen and (max-width: 500px) {
+      .content__offer-note-img {
+        max-width: 56px; } }
   .content__offer-note-text {
     font-size: 22px;
     font-weight: bold; }
     @media only screen and (max-width: 600px) {
       .content__offer-note-text {
         font-size: 20px; } }
+    @media only screen and (max-width: 500px) {
+      .content__offer-note-text {
+        font-size: 17px; } }
   .content__offer-note-decor {
-    margin-top: -50px;
-    margin-left: -20px; }
+    position: absolute;
+    left: 62%;
+    top: -100%; }
   .content__offer-price {
     display: -ms-flexbox;
     display: flex;
@@ -483,8 +491,8 @@ body {
   width: 1.00118em; }
 
 .icon-icon-minutes {
-  font-size: 8.13rem;
-  width: 1.68143em; }
+  font-size: 9.2rem;
+  width: 1.43804em; }
 
 .icon-icon-rub {
   font-size: 0.86rem;
